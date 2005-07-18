@@ -1,0 +1,31 @@
+diff -urN dosdetector-20050711.orig/configure.in dosdetector-20050711/configure.in
+--- dosdetector-20050711.orig/configure.in	2005-05-14 20:34:06.000000000 +0200
++++ dosdetector-20050711/configure.in	2005-07-18 16:47:46.000000000 +0200
+@@ -16,7 +16,8 @@
+ AC_CHECK_HEADER(pcap.h,,
+                 [AC_MSG_ERROR([Require pcap.h header !])])
+ AC_CHECK_HEADER(ncurses.h,,
+-                [AC_MSG_ERROR([Require ncurses.h header !])])
++                [AC_CHECK_HEADER(ncurses/ncurses.h,,
++		 	[AC_MSG_ERROR([Require ncurses.h header !])])])
+ AC_CHECK_HEADER(net/ethernet.h,,
+                 [AC_MSG_ERROR([Require ethernet.h header !])])
+ AC_CHECK_HEADER(netinet/in_systm.h,,
+diff -urN dosdetector-20050711.orig/include/dos.h dosdetector-20050711/include/dos.h
+--- dosdetector-20050711.orig/include/dos.h	2005-07-04 16:47:49.000000000 +0200
++++ dosdetector-20050711/include/dos.h	2005-07-18 17:33:53.000000000 +0200
+@@ -8,7 +8,13 @@
+ #include <sys/time.h>
+ #include <netinet/in_systm.h>
+ #include <pcap.h>
+-#include <ncurses.h>
++
++#ifdef HAVE_LIBNCURSES_NCURSES
++#  include <ncurses/ncurses.h>
++#else
++#  include <ncurses.h>
++#endif
++
+ #include <net/ethernet.h>
+ #include <netinet/in.h>
+ #include <netinet/ip.h>
