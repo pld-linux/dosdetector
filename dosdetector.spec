@@ -9,6 +9,8 @@ Source0:	http://darkzone.ma.cx/resources/unix/dosdetector/%{name}-%{version}.tar
 # Source0-md5:	4a2771a1dcaf19d4e6a969710b7a1c1f
 Patch0:		%{name}-ncurses.patch
 URL:		http://darkzone.ma.cx/resources/unix/dosdetector/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	libcap-devel
 BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
