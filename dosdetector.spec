@@ -17,15 +17,15 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 DoSDetector analyses and detects most of suspicious traffic from IP
-and alerts about it. It can detect worm traffic, SYN flood, icmp
-flood, udp flood etc... It's configurable via a set of rules which
+and alerts about it. It can detect worm traffic, SYN flood, ICMP
+flood, UDP flood etc... It's configurable via a set of rules which
 have some points assigned to IP according to a matching rule. When the
 point limit for a given IP is exceeded, DoSDetector prints warning.
 
 %description -l pl
 DoSDetector analizuje i wykrywa wiêkszo¶æ podejrzanego ruchu
 sieciowego i informuje o tym. Potrafi wykryæ ruch powodowany przez
-robaki, SYN flood, icmp flood, udp flood itp... Jest konfigurowalny
+robaki, SYN flood, ICMP flood, UDP flood itp... Jest konfigurowalny
 przez zestaw zasad które dopisuj± punkty do IP zgodnie z pasuj±c±
 regu³±. Kiedy limit punktów dla danego IP zostanie przekroczony,
 DoSDetector wy¶wietla ostrze¿enie. Program jest u¿yteczny do
