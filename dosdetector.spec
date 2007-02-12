@@ -1,5 +1,5 @@
 Summary:	Suspicious network traffic analyser and detector
-Summary(pl):	Analizator i wykrywacz podejrzanego ruchu sieciowego
+Summary(pl.UTF-8):   Analizator i wykrywacz podejrzanego ruchu sieciowego
 Name:		dosdetector
 Version:	20050711
 Release:	0.1
@@ -22,13 +22,13 @@ flood, UDP flood etc... It's configurable via a set of rules which
 have some points assigned to IP according to a matching rule. When the
 point limit for a given IP is exceeded, DoSDetector prints warning.
 
-%description -l pl
-DoSDetector analizuje i wykrywa wiêkszo¶æ podejrzanego ruchu
-sieciowego i informuje o tym. Potrafi wykryæ ruch powodowany przez
+%description -l pl.UTF-8
+DoSDetector analizuje i wykrywa wiÄ™kszoÅ›Ä‡ podejrzanego ruchu
+sieciowego i informuje o tym. Potrafi wykryÄ‡ ruch powodowany przez
 robaki, SYN flood, ICMP flood, UDP flood itp... Jest konfigurowalny
-przez zestaw zasad które dopisuj± punkty do IP zgodnie z pasuj±c±
-regu³±. Kiedy limit punktów dla danego IP zostanie przekroczony,
-DoSDetector wy¶wietla ostrze¿enie. Program jest u¿yteczny do
+przez zestaw zasad ktÃ³re dopisujÄ… punkty do IP zgodnie z pasujÄ…cÄ…
+reguÅ‚Ä…. Kiedy limit punktÃ³w dla danego IP zostanie przekroczony,
+DoSDetector wyÅ›wietla ostrzeÅ¼enie. Program jest uÅ¼yteczny do
 zbudowania sieciowego systemu antywirusowego.
 
 %prep
