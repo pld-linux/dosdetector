@@ -1,5 +1,5 @@
 Summary:	Suspicious network traffic analyser and detector
-Summary(pl.UTF-8):   Analizator i wykrywacz podejrzanego ruchu sieciowego
+Summary(pl.UTF-8):	Analizator i wykrywacz podejrzanego ruchu sieciowego
 Name:		dosdetector
 Version:	20050711
 Release:	0.1
