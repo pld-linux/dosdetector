@@ -1,12 +1,12 @@
 Summary:	Suspicious network traffic analyser and detector
 Summary(pl.UTF-8):	Analizator i wykrywacz podejrzanego ruchu sieciowego
 Name:		dosdetector
-Version:	20050711
+Version:	20060621
 Release:	0.1
 License:	GPL
 Group:		Applications
 Source0:	http://darkzone.ma.cx/resources/unix/dosdetector/%{name}-%{version}.tar.gz
-# Source0-md5:	4a2771a1dcaf19d4e6a969710b7a1c1f
+# Source0-md5:	b2230048725657dbc7fde290c2fdfa08
 Patch0:		%{name}-ncurses.patch
 URL:		http://darkzone.ma.cx/resources/unix/dosdetector/
 BuildRequires:	autoconf
